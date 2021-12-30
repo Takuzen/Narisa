@@ -1,10 +1,7 @@
 import Head from "next/head";
-{
-  /*
 import Image from "next/image";
-*/
-}
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,40 +13,52 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>鈴木捺梨沙</h1>
-
-        {/*
-        <Image
-          className="sampleImage"
-          src="/image-sample.JPG"
-          alt="image-sample"
-          width={1000}
-          height={300}
-        ></Image>
-        */}
-
         <div className={styles.grid}>
-          <a
-            href="https://www.facebook.com/profile.php?id=100006778170775"
-            className={styles.card}
-          >
-            <h2>Facebook</h2>
-          </a>
+          <Image
+            className="topImage"
+            src="/top.jpg"
+            alt="top-img"
+            width={750}
+            height={500}
+          ></Image>
+          <section className={styles.menu}>
+            <div className="btn1Container">
+              <Link href="https://oonekonarisa.medy.jp/" passHref>
+                <Image
+                  src="/1.png"
+                  alt="tegaki1"
+                  width={210}
+                  height={70}
+                  objectFit="contain"
+                ></Image>
+              </Link>
+            </div>
 
-          <a
-            href="https://www.instagram.com/narisa9696/?hl=en"
-            className={styles.card}
-          >
-            <h2>Instagram</h2>
-          </a>
+            <div className="btn2Container">
+              <Link href="" passHref>
+                <Image
+                  src="/2.png"
+                  alt="tegaki2"
+                  width={210}
+                  height={70}
+                ></Image>
+              </Link>
+            </div>
 
-          <a href="https://twitter.com/oonekonarisa" className={styles.card}>
-            <h2>Twitter</h2>
-          </a>
-
-          <a href="https://oonekonarisa.medy.jp/" className={styles.card}>
-            <h2>Blog</h2>
-          </a>
+            <div className="btn3Container">
+              <Link
+                href="https://www.instagram.com/kissa_ooneko/?hl=en"
+                passHref
+              >
+                <Image
+                  src="/3.png"
+                  alt="tegaki3"
+                  width={210}
+                  height={70}
+                ></Image>
+              </Link>
+            </div>
+          </section>
         </div>
       </main>
 
@@ -58,9 +67,7 @@ export default function Home() {
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          Wriiten by Narisa Suzuki
-        </a>
+        ></a>
       </footer>
     </div>
   );
