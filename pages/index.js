@@ -13,6 +13,20 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <div className={styles.specialSection}>
+          <h1 className={styles.happyWedding}>
+            結婚おめでとう！
+            <br />
+            末長くお幸せにね。
+          </h1>
+          <Image
+            className="marchingBand"
+            src="/marching-band.gif"
+            alt="marching-band"
+            width={400}
+            height={220}
+          ></Image>
+        </div>
         <div className={styles.grid}>
           <Image
             className="topImage"
@@ -22,7 +36,7 @@ export default function Home() {
             height={500}
           ></Image>
           <section className={styles.menu}>
-            <div className="btn1Container">
+            <div className={styles.btn1Container}>
               <Link href="https://oonekonarisa.medy.jp/" passHref>
                 <Image
                   src="/1.png"
@@ -34,7 +48,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="btn2Container">
+            <div className={styles.btn2Container}>
               <Link href="" passHref>
                 <Image
                   src="/2.png"
@@ -45,7 +59,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="btn3Container">
+            <div className={styles.btn3Container}>
               <Link
                 href="https://www.instagram.com/kissa_ooneko/?hl=en"
                 passHref
@@ -62,13 +76,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
-      </footer>
+      <footer className={styles.footer}>なりさ®︎</footer>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Yuji+Boku&family=Zen+Antique+Soft&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700&display=swap");
 
 .container {
   min-height: 100vh;
@@ -20,12 +21,22 @@
   align-items: center;
 }
 
+.btn1Container:hover {
+  cursor: pointer;
+}
+.btn2Container {
+  cursor: pointer;
+}
+.btn3Container {
+  cursor: pointer;
+}
+
 .footer {
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 
 .footer a {
@@ -54,7 +65,30 @@
   gap: 50px;
 }
 
+.specialSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  background-color: white;
+  text-align: center;
+  margin: 0 30px 60px 30px;
+}
+
+.happyWedding {
+  font-family: "Shippori Mincho B1", serif;
+  color: #e51b17;
+  animation: 3s ease-in 1s 2 reverse both paused slideout;
+}
+
 @media (max-width: 600px) {
+  .specialSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
   .grid {
     width: 100%;
     flex-direction: column;
