@@ -21,13 +21,38 @@
   align-items: center;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.btn1Container {
+  margin-left: 100px;
+}
+
 .btn1Container:hover {
   cursor: pointer;
 }
+
 .btn2Container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+
+.btn2Container:hover {
   cursor: pointer;
 }
+
 .btn3Container {
+  display: flex;
+  justify-content: center;
+  margin-right: 150px;
+}
+
+.btn3Container:hover {
   cursor: pointer;
 }
 
@@ -57,38 +82,7 @@
   text-align: center;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  gap: 50px;
-}
-
-.specialSection {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
-  background-color: white;
-  text-align: center;
-  margin: 0 30px 60px 30px;
-}
-
-.happyWedding {
-  font-family: "Shippori Mincho B1", serif;
-  color: #e51b17;
-  animation: 3s ease-in 1s 2 reverse both paused slideout;
-}
-
 @media (max-width: 600px) {
-  .specialSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0px;
-  }
-
   .grid {
     width: 100%;
     flex-direction: column;
