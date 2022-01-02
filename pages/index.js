@@ -29,7 +29,6 @@ export default function Home() {
                   alt="tegaki1"
                   width={210}
                   height={70}
-                  objectFit="contain"
                 ></Image>
               </Link>
             </div>
@@ -62,7 +61,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>なりさ®︎</footer>
+      <footer className={styles.footer}>Narisa®︎</footer>
     </div>
   );
 }

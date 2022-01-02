@@ -87,4 +87,16 @@
     width: 100%;
     flex-direction: column;
   }
+
+  .btn1Container {
+    margin-left: 30px;
+  }
+
+  .btn2Container {
+    margin-right: 30px;
+  }
+
+  .btn3Container {
+    margin-right: 50px;
+  }
 }
