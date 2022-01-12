@@ -26,7 +26,7 @@ export default function Home() {
           ></Image>
           <section className={styles.menu}>
             <div className={styles.btn1Container}>
-              <Link href="https://oonekonarisa.medy.jp/" passHref>
+              <Link href="https://oonekodays.hatenadiary.com/" passHref>
                 <Image
                   src="/1.png"
                   alt="tegaki1"
